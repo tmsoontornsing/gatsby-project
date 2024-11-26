@@ -6,7 +6,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter, html } = markdownRemark
 
   return (
-    <div>
+    <div style={{ marginLeft: 20}}>
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
