@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hello World - Gatsby App by TM',
-    description: 'A simple Gatsby project by TM', // Add description field if needed
-    author: 'TM', // Add an author field here
+    title: 'Your Site Title',
+    description: 'A description of your site',
+    author: 'Your Name', // Add author here
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`, // Name for the source
-        path: `${__dirname}/src/pages/hello-world/`, // Path to the folder containing markdown files
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
-    `gatsby-transformer-remark`, // Transforms Markdown files into HTML
+    'gatsby-transformer-remark',
+    'gatsby-plugin-react-helmet'
   ],
-};
+}

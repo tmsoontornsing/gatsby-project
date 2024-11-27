@@ -1,0 +1,57 @@
+/* src/styles/templates.css */
+
+/* GitHub Template Styles */
+.github-template {
+    --bg-body: #f6f8fa;
+    --text-color: #24292e;
+    --bg-content: #ffffff;
+    --border-color: #e1e4e8;
+  }
+  
+  .github-template.dark {
+    --bg-body: #0d1117;
+    --text-color: #c9d1d9;
+    --bg-content: #161b22;
+    --border-color: #30363d;
+  }
+  
+  .github-template .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--bg-content);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+  }
+  
+  /* Typology Template Styles */
+  .typology-template {
+    font-family: 'Domine', serif;
+  }
+  
+  .typology-template .typology-header {
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    z-index: 9001;
+  }
+  
+  .typology-template .typology-section {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 16rem 0 15rem;
+    box-shadow: 0 30px 50px 0 rgba(1,1,1,.15);
+  }
+  
+  .typology-template .section-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  /* Default Template Styles */
+  .default-template {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }

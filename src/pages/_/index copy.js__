@@ -1,0 +1,34 @@
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+
+export default function HomePage({ data }) {
+  return (
+    <div>
+      <h1>Blog Posts</h1>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.frontmatter.path}>
+          <Link to={node.frontmatter.path}>
+            {node.frontmatter.title}
+          </Link>
+          <small> - {node.frontmatter.template} template</small>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            template
+          }
+        }
+      }
+    }
+  }
+`
