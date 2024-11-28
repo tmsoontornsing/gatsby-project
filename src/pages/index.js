@@ -104,7 +104,7 @@ export default function HomePage({ data }) {
             color: '#fff',
           }}
         >
-          TM's Template
+          TM's Template :)
         </h1>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {data.allMarkdownRemark.edges.map(({ node }) => {
